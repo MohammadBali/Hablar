@@ -38,13 +38,13 @@ class Units extends StatelessWidget{
                         return defaultAlertDialog(
                             context: context,
                             title: 'This Course Units',
-                            content: SingleChildScrollView(
+                            content: const SingleChildScrollView(
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisSize: MainAxisSize.min,
                                 children:
-                                const[
+                                [
                                   Text(
                                     'Each Course has a set of units, pass all the quizzes to complete the language\'s course.',
                                   ),

@@ -148,9 +148,12 @@ class _MyAppState extends State<MyApp> {
                       'assets/images/logo.svg',
                       width: 60,
                       height: 60,
-                      color: AppCubit.get(context).isDarkTheme? Colors.deepOrange : Colors.blue,
+                      //color: AppCubit.get(context).isDarkTheme? Colors.deepOrange : Colors.blue, //Deprecated
                       fit: BoxFit.contain,
                       semanticsLabel: 'Logo',
+                      theme: SvgTheme(
+                        currentColor: AppCubit.get(context).isDarkTheme? Colors.deepOrange : Colors.blue,
+                      ),
                     ),
                     nextScreen: ShowCaseWidget(builder: Builder(builder: (context)=> widget.homeWidget),),
                     splashTransition: SplashTransition.fadeTransition,

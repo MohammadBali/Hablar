@@ -43,13 +43,13 @@ class Favourites extends StatelessWidget {
                           return defaultAlertDialog(
                             context: context,
                             title: 'Favourite Words',
-                            content: SingleChildScrollView(
+                            content: const SingleChildScrollView(
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisSize: MainAxisSize.min,
                                 children:
-                                const[
+                                [
                                   Text('Each time you translate a word, you can add it to your favourites list!',),
 
                                   Text('-By Clicking the Like Button you can add a new word or remove it',),

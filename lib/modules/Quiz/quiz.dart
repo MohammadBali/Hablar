@@ -113,12 +113,12 @@ class _QuizPageState extends State<QuizPage> with SingleTickerProviderStateMixin
                           return defaultAlertDialog(
                               context: context,
                               title: 'Quiz Section',
-                              content: Column(
+                              content: const Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisSize: MainAxisSize.min,
                                 children:
-                                const[
+                                [
                                   Text('Variety of questions to be answered.',),
 
                                   Text('-Read the question and choose an answer',),
@@ -463,7 +463,8 @@ class _QuizPageState extends State<QuizPage> with SingleTickerProviderStateMixin
             AspectRatio(
               aspectRatio: 16/9,
               child: ChewieListItem(
-                videoPlayerController: VideoPlayerController.network(questionModel.link !=null ? questionModel.link! : ''),
+                videoPlayerController: VideoPlayerController.network(questionModel.link !=null ? questionModel.link! : ''), //Deprecated
+                //videoPlayerController: VideoPlayerController.networkUrl(questionModel.link !=null ? questionModel.link! : ''),
                 looping: false,
               ),
             ),
@@ -551,9 +552,8 @@ class _QuizPageState extends State<QuizPage> with SingleTickerProviderStateMixin
             const SizedBox(height: 30,),
 
             TextButton(
-              child: Row(
-                children:const
-               [
+              child: const Row(
+                children:[
                    Text(
                    'Play Audio',
                    style: TextStyle(

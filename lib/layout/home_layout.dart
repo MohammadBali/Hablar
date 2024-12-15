@@ -64,9 +64,12 @@ class _HomeLayoutState extends State<HomeLayout> {
                 },
                   child: SvgPicture.asset(
                     'assets/images/logo.svg',
-                    color: cubit.isDarkTheme? defaultDarkColor : defaultColor,
+                    // color: cubit.isDarkTheme? defaultDarkColor : defaultColor, //Deprecated
                     fit: BoxFit.cover,
                     semanticsLabel: 'Logo',
+                    theme: SvgTheme(
+                      currentColor: cubit.isDarkTheme? defaultDarkColor : defaultColor
+                    ),
                   ),
               ),
 
@@ -86,13 +89,13 @@ class _HomeLayoutState extends State<HomeLayout> {
                             return defaultAlertDialog(
                               context: context,
                               title: 'Ready to learn a new language?',
-                              content: SingleChildScrollView(
+                              content: const SingleChildScrollView(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisSize: MainAxisSize.min,
                                   children:
-                                  const[
+                                  [
                                      Text('-This is your home page, we will show you a recap here.',),
 
                                      Text('-If you would like to proceed then press Let\'s Go'),
@@ -125,13 +128,13 @@ class _HomeLayoutState extends State<HomeLayout> {
                             return defaultAlertDialog(
                                 context: context,
                                 title: 'Here You Can add new languages to learn !',
-                                content: SingleChildScrollView(
+                                content: const SingleChildScrollView(
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     mainAxisSize: MainAxisSize.min,
                                     children:
-                                    const[
+                                    [
                                       Text('-Press on a language to proceed.',),
 
                                       Text('-Feeling up to it?\nPress + to take on a new course.',),
@@ -161,13 +164,13 @@ class _HomeLayoutState extends State<HomeLayout> {
                             return defaultAlertDialog(
                                 context: context,
                                 title: 'Play and Earn !',
-                                content: SingleChildScrollView(
+                                content: const SingleChildScrollView(
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     mainAxisSize: MainAxisSize.min,
                                     children:
-                                    const[
+                                    [
                                       Text('-Work hard and get paid !\nFor every achievement you get right you will score points.',),
 
                                       Text('-You can check the Leaderboards for the rivals with the highest points.',),
@@ -196,13 +199,13 @@ class _HomeLayoutState extends State<HomeLayout> {
                         return defaultAlertDialog(
                             context: context,
                             title: 'You can change your personal info too !',
-                            content: SingleChildScrollView(
+                            content: const SingleChildScrollView(
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisSize: MainAxisSize.min,
                                 children:
-                                const[
+                                [
                                   Text('If you\'d like to change your name, change the name box here, then click UPDATE.',),
 
                                   Text('Same applies for all the other choices.',),

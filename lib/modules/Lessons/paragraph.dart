@@ -83,9 +83,8 @@ class Paragraph extends StatelessWidget {
                     //If paper is Submitted but not checked and marked yet.
                     Visibility(
                       visible: isSubmitted && isChecked==false,
-                      child: Column(
-                        children: const
-                        [
+                      child: const Column(
+                        children: [
                           Text(
                             "You've submitted your paragraph.\nWaiting for result...",
                             style: TextStyle(

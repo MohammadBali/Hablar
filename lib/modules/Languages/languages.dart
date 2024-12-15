@@ -149,9 +149,8 @@ Widget youtubeLibraryItem(AppCubit cubit,BuildContext context) => Padding(
         );
       },
 
-      child: Row(
-        children:const
-        [
+      child: const Row(
+        children:[
           Image(
             image: AssetImage('assets/images/Youtube.png'),
             width: 80.0,

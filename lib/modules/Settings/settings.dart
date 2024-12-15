@@ -241,14 +241,14 @@ class _SettingsState extends State<Settings> {
                                         return defaultAlertDialog(
                                             context: context,
                                             title: 'Thanks for Using our App!',
-                                            content: SingleChildScrollView(
+                                            content: const SingleChildScrollView(
                                               child: Column(
                                                 mainAxisAlignment:
                                                 MainAxisAlignment.start,
                                                 crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                                 mainAxisSize: MainAxisSize.min,
-                                                children: const [
+                                                children: [
                                                   Text('A work of sincere people',),
 
                                                   Text('-Mobile Application: Mohammad Bali',),
@@ -282,14 +282,14 @@ class _SettingsState extends State<Settings> {
                                         return defaultAlertDialog(
                                             context: context,
                                             title: 'Contact Us Anytime!',
-                                            content: SingleChildScrollView(
+                                            content: const SingleChildScrollView(
                                               child: Column(
                                                 mainAxisAlignment:
                                                 MainAxisAlignment.start,
                                                 crossAxisAlignment:
                                                 CrossAxisAlignment.start,
                                                 mainAxisSize: MainAxisSize.min,
-                                                children: const [
+                                                children: [
                                                   Text('Get in touch with us through email.',),
 
                                                   Text('LearnWithVideosNow@gmail.com',),

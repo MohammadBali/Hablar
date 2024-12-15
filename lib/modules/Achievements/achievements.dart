@@ -67,12 +67,14 @@ class AchievementsPage extends StatelessWidget {
                       children: [
                         SvgPicture.asset(
                           'assets/images/crown.svg',
-                          color: cubit.isDarkTheme? Colors.deepOrange : Colors.blue,
+                          //color: cubit.isDarkTheme? Colors.deepOrange : Colors.blue,
                           fit: BoxFit.cover,
                           width: 40,
                           height: 40,
                           semanticsLabel: 'Crown',
-
+                          theme: SvgTheme(
+                            currentColor: AppCubit.get(context).isDarkTheme? Colors.deepOrange : Colors.blue,
+                          ),
                         ),
 
                         const SizedBox(width:15,),

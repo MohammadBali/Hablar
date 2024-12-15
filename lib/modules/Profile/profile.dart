@@ -115,8 +115,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                     ),
                                   ),
                                   const Padding(
-                                    padding: EdgeInsetsDirectional.only(
-                                        end: 6, bottom: 2),
+                                    padding: EdgeInsetsDirectional.only(end: 6, bottom: 2),
                                     child: Icon(
                                       Icons.camera_alt_outlined,
                                     ),
@@ -333,11 +332,11 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               const Spacer(),
-              Padding(
-                padding: const EdgeInsetsDirectional.only(end: 8.0, bottom: 5),
+              const Padding(
+                padding: EdgeInsetsDirectional.only(end: 8.0, bottom: 5),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
-                  children: const [
+                  children: [
                     Icon(
                       Icons.arrow_forward_rounded,
                       color: Colors.white,

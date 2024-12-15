@@ -67,11 +67,14 @@ class Leaderboards extends StatelessWidget {
 
               SvgPicture.asset(
                 'assets/images/crown.svg',
-                color: cubit.isDarkTheme? Colors.white : Colors.black,
+                //color: cubit.isDarkTheme? Colors.white : Colors.black,
                 fit: BoxFit.cover,
                 width: 30,
                 height: 30,
                 semanticsLabel: 'Crown',
+                theme: SvgTheme(
+                  currentColor: cubit.isDarkTheme? Colors.deepOrange : Colors.blue,
+                ),
 
               ),
             ],

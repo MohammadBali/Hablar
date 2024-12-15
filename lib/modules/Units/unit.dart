@@ -64,13 +64,13 @@ class _UnitState extends State<Unit> {
                           return defaultAlertDialog(
                               context: context,
                               title: 'Content of each Unit',
-                              content: SingleChildScrollView(
+                              content: const SingleChildScrollView(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   mainAxisSize: MainAxisSize.min,
                                   children:
-                                  const[
+                                  [
                                     Text('-Each Unit contains Lessons, Videos, a Quiz to test your abilities, a Paragraph to summarize what you have learnt.\n',),
 
                                     Text('-Each Lesson will contain mandatory information to pass the unit\n',),
